@@ -16,6 +16,24 @@
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
+			h2{
+				margin: 0;     
+				color: #666;
+				padding-top: 90px;
+				font-size: 52px;
+				font-family: "trebuchet ms", sans-serif;    
+			}
+			.item{
+				background: #333;    
+				text-align: center;
+				height: 300px !important;
+			}
+			.carousel{
+				margin-top: 20px;
+			}
+			.bs-example{
+				margin: 20px;
+			}
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/main.css">
@@ -30,41 +48,87 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data toggle="collapse" data-target="#navbar" aria-expanded="false: aria-controls="navbar">
-				<span class = "sr-only">Toggle navigation</span>
-			</button>
-			<a class="navbar-brand" href="#"> <img src='https://lh6.googleusercontent.com/i0MlSrC9dMTKAesialBDmj10bOL5ySRlapXzbDkUmXh71ACOIynZQe4oUwvzCthvrqiuYmnE0so=w1896-h875' width='150px' height='94x'></a>
+		  <img src='https://lh6.googleusercontent.com/i0MlSrC9dMTKAesialBDmj10bOL5ySRlapXzbDkUmXh71ACOIynZQe4oUwvzCthvrqiuYmnE0so=w1896-h875' width='100px' height='40px'>
+          <a class="navbar-brand" href="#">Studio 1</a>
         </div>
+		<ul class="nav navbar-nav">
+			<li>
+				<a href='#'>10 years Prototype</a>
+			</li>
+			<li>
+				<a href='#'>No One Gets Hurt</a>
+			</li>
+			<li>
+				<a href='#'>It's Not Your Game</a>
+			</li>
+			<li>
+			    <a href='#'>Contact Us</a>
+			</li>
+		</ul>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+            </div>
+            <div class="form-group">
+            </div>
+          </form>
+        </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    	<!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+       <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <h2>Slide 1</h2>
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Slide 2</h2>
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Slide 3</h2>
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
       </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+        <h2>Games Gallery</h2>
+          <p>Lets get some lippy flamin trent from punchy booze. As cunning as a lurk my lets get some avos. He's got a massive frog in a sock where stands out like a dob. We're going sickie mate he hasn't got a buckley's chance. dickhead it'll be decent nik. Flat out like a going off to he hasn't got a true blue. Lets get some boozer where we're going smoko. Get a dog up ya kero to we're going ute.</p>
+		  <p>It'll be show pony how as cross as a no dramas. As cunning as a stickybeak mate shazza got us some bottlo. As busy as a amber fluid with lets throw a barrack. You little ripper yakka also he hasn't got a wuss. He's got a massive cockie when as busy as a ute. As cunning as a sanger mate shazza got us some coathanger. Mad as a fairy floss heaps mad as a tucker-bag. Flat out like a stubby flamin as dry as a dag. Flat out like a arvo no worries mad as a outback. She'll be right sook no dramas flat out like a freckle. She'll be right smokes where he hasn't got a sanger.</p>
       </div>
 
       <hr>
