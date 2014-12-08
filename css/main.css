@@ -1,0 +1,21 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.navbar-inverse {
+	background-color: #76a16a;
+}
+
+.navbar-fixed-top{
+	border-width: 1px;
+}
+
+.navbar-brand {
+	width: 100px;
+	height: 62px;
+}
+
+.navbar {
+	min-height: 100px;
+}
