@@ -69,3 +69,42 @@ footer > div {
 	margin: 0;
 	width: 100%;
 }
+
+.gametile {
+	padding: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 250px;
+	height: 250px;
+}
+
+.gametitle {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	color: white;
+	padding: 5px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.gamecaption {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	color: white;
+	padding: 5px;
+}
+
+.gametile:hover .gametitle{
+	display: block;
+	top: 0px;
+}
+
+.gametile:hover .gamecaption{
+	display: block;
+	bottom: 0px;
+}
