@@ -4,6 +4,7 @@ function addThingToSlidyThing(head, captionhead, caption, background, page){
 		var indicatorsCon = slidyThing.getElementsByClassName("carousel-indicators")[0]
 		var count = indicatorsCon.children.length;
 		var element = document.createElement("li");
+		if(count == 0) element.className += "active";
 		element.setAttribute("data-target", "#myCarousel");
 		element.setAttribute("data-slide-to", count);
 		indicatorsCon.appendChild(element);
@@ -12,6 +13,9 @@ function addThingToSlidyThing(head, captionhead, caption, background, page){
 	var slidesCon = slidyThing.getElementsByClassName("carousel-inner")[0];
 	var element = document.createElement("a");
 	element.className = "item";
+
+	if(slidesCon.children.length == 0) element.className += " active";
+
 	element.href = page;
 
 		var cap = document.createElement("div");
@@ -40,4 +44,5 @@ function addThingToSlidyThing(head, captionhead, caption, background, page){
 }
 
 
+addThingToSlidyThing("Vad?", "Värför är detta här", "Jag vet inte. Vet du?", "img/samuel.png", "game1.html");
 addThingToSlidyThing("Vad?", "Värför är detta här", "Jag vet inte. Vet du?", "img/samuel.png", "game1.html");
