@@ -1,7 +1,3 @@
-function contact(){
-	alert("No. We don't like you");
-}
-
 // function addThingToSlidyThing(head, captionhead, caption){
 // 	var slidyThing = document.getElementById("myCarousel");
 // 	{
