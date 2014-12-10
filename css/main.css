@@ -20,7 +20,6 @@
 
 body {
 	padding-top: 50px;
-	padding-bottom: 20px;
 }
 
 h2{
@@ -46,6 +45,15 @@ h2{
 }
 
 footer {
-	width:100% !important;
+	background-color: #76a16a;
+	width:100%;
+	padding: 10px 10px 0 10px; /* t r b l */
 	overflow: auto;
+	/*margin-bottom: 0;	*/
+	border-top: 1px;
+}
+
+footer > div {
+	left: 0;
+	right: 0;
 }
