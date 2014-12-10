@@ -97,6 +97,7 @@ footer > div {
 	width: 100%;
 	color: white;
 	padding: 5px;
+	max-height: 100px;
 }
 
 .gametile:hover .gametitle{
