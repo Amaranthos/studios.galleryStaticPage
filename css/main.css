@@ -70,6 +70,10 @@ footer > div {
 	width: 100%;
 }
 
+.carousel .item > img {
+	margin: 0 auto;
+}
+
 .gametile {
 	padding: 0;
 	margin-left: 15px;
