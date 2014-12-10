@@ -45,4 +45,4 @@ function addThingToSlidyThing(head, captionhead, caption, background, page){
 
 
 addThingToSlidyThing("Vad?", "Värför är detta här", "Jag vet inte. Vet du?", "img/samuel.png", "game1.html");
-addThingToSlidyThing("Vad?", "Värför är detta här", "Jag vet inte. Vet du?", "img/samuel.png", "game1.html");
+addThingToSlidyThing("What?", "Why's this here?", "I blame tony abbott", "img/awesomegamelogo.png", "game2.html");
