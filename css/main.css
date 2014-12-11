@@ -6,10 +6,6 @@
 	font-family: "Roboto";
 	src: url(../fonts/Roboto-Regular.ttf);
 }
-/*
-.navbar {
-	margin-bottom: 0;
-}*/
 
 .navbar-inverse {
 	background-color: #76a16a;
@@ -114,8 +110,18 @@ footer > div {
 	bottom: 0px;
 }
 
+<<<<<<< HEAD
 .navbarcorey > li > a {
 	position: relative;
 	display: initial;
 	padding: 0px 15px;
+=======
+.gamepagebanner{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.gameinfo > .row > :first-child {
+	font-weight: bold;
+>>>>>>> origin/master
 }
