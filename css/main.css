@@ -110,12 +110,12 @@ footer > div {
 	bottom: 0px;
 }
 
-<<<<<<< HEAD
 .navbarcorey > li > a {
 	position: relative;
 	display: initial;
 	padding: 0px 15px;
-=======
+}
+
 .gamepagebanner{
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -123,5 +123,4 @@ footer > div {
 
 .gameinfo > .row > :first-child {
 	font-weight: bold;
->>>>>>> origin/master
 }
