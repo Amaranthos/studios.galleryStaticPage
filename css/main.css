@@ -113,3 +113,9 @@ footer > div {
 	display: block;
 	bottom: 0px;
 }
+
+.navbarcorey > li > a {
+	position: relative;
+	display: initial;
+	padding: 0px 15px;
+}

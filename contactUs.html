@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/main.css">
 
 		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
 		
 	</head>
 <body>
@@ -41,6 +42,11 @@
 				 
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
+					<ul class='nav navbar-nav navbar-left navbarcorey'>
+						<li>
+							<a href='index.html'><img src='img/icon.png' border='0'></a>
+						</li>
+					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<a href='10years.html'>10 Years Prototype</a>
@@ -64,6 +70,22 @@
 <div class="page-header">
     <h1>Contact Form </h1>
 </div>
+
+<script>
+	$(document).ready(function()
+	{
+		var fname = $('#fname');
+		var lname = $('#lname');
+		var subject = $('#subject');
+		var phone = $('#phone');
+		var message = $('#message');
+		var button = $('#subMate');
+		button.click(function()
+		{
+			$("#subMate").attr('href', "mailto:contact@thestudios.gallery?subject=" + subject.val() + "&body=" + message.val() + "%0D%0A%0D%0AFrom " + fname.val() + lname.val());
+		});
+	});
+</script>
 
 <!-- Contact Form - START -->
 <div class="container">
@@ -90,14 +112,7 @@
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                             <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                <input id="subject" name="subject" type="text" placeholder="Subject" class="form-control">
                             </div>
                         </div>
 
@@ -110,7 +125,7 @@
 
                         <div class="form-group">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                <a href='#' id='subMate'><button type='button' id='subMate' class="btn btn-primary btn-lg" onClick="clickedBro()">Submit</button></a>
                             </div>
                         </div>
                     </fieldset>
