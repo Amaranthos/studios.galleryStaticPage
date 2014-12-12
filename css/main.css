@@ -72,10 +72,7 @@ footer > div {
 
 .gametile {
 	padding: 0;
-	margin-left: 15px;
-	margin-right: 15px;
 	margin-bottom: 15px;
-	width: 250px;
 	height: 250px;
 }
 
@@ -83,7 +80,7 @@ footer > div {
 	display: none;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
+	width: 250px;
 	color: white;
 	padding: 5px;
 	font-size: 24px;
@@ -94,7 +91,7 @@ footer > div {
 	display: none;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
+	width: 250px;
 	color: white;
 	padding: 5px;
 	max-height: 100px;
@@ -111,9 +108,10 @@ footer > div {
 }
 
 .navbarcorey > li > a {
-	position: relative;
+	/*position: relative;
 	display: initial;
-	padding: 0px 15px;
+	padding: 0px 15px;*/
+	
 }
 
 .gamepagebanner{
