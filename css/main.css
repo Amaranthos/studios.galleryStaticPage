@@ -122,3 +122,19 @@ footer > div {
 .gameinfo > .row > :first-child {
 	font-weight: bold;
 }
+
+.noMobileShow
+{
+	display: none;
+}
+
+.showImageInstead
+{
+	display: block;
+}
+
+@media (min-width: 768px) {
+	.noMobileShow { display:block; }
+	.showImageInstead { display: none; }
+}
+
