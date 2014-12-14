@@ -17,6 +17,118 @@
 
 		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		
+		
+		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
+		<!--
+			var config = {
+				width: 768, 
+				height: 432,
+				params: { enableDebugging:"0" }
+				
+			};
+			config.params["disableContextMenu"] = true;
+			var u = new UnityObject2(config);
+			
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "builds/Get_Kraken_rc1.unity3d");
+			});
+		-->
+		</script>
+		<style type="text/css">
+		body {
+			font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: white;
+			color: black;
+			text-align: center;
+		}
+		a:link, a:visited {
+			color: #000;
+		}
+		a:active, a:hover {
+			color: #666;
+		}
+		p.header {
+			font-size: small;
+		}
+		p.header span {
+			font-weight: bold;
+		}
+		p.footer {
+			font-size: x-small;
+		}
+		div.contentt {
+			margin: auto;
+			width: 768px;
+		}
+		div.broken,
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.broken a,
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.broken img,
+		div.missing img {
+			border-width: 0px;
+		}
+		div.broken {
+			display: none;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: 432px;
+			width: 768px;
+		}
+		</style>
+		
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -67,13 +179,27 @@
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 
 		<div class='content'>
+			<div class='row'>
+				<div class='col-md-12'>
+					<br/>
+					<h2>Get Kraken</h2>
+				</div>
+			</div>
 			<div class="text-center">
 				<div class='row'>
 					<div class='col-md-12'>
 						<div class='noMobileShow'>
 							
-							
-							<!-- Put game code here! -->
+							<div class="contentt">
+								<div id="unityPlayer">
+									<div class="missing">
+										<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+										<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+										</a>
+									</div>
+								</div>
+							</div>
+						<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
 							
 							
 						</div>
@@ -87,34 +213,34 @@
 			<div class="col-md-2 col-md-offset-3 col-xs-12 gameinfo">
 				<h2>Info</h2>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-5">
 							Team Name
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-7">
 							Kraken
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-5">
 							Genre
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-7">
 							Fishing/Tower Defense
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-5">
 							Project Length
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-7">
 							6 Weeks
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-5">
 							Team Members
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-7">
 							<a href='https://coreyunderdown.wordpress.com/'>Corey Underdown</a> - <a href='mailto:silcoish@gmail.com'>email</a><br/>
 							<a href='http://lukebsavage.wordpress.com/'>Luke Savage</a><br/>
 							<a href='#'>Chris Edwards</a>
@@ -124,18 +250,18 @@
 
 			<div class="col-md-4 col-xs-12">
 				<h2>Description</h2>
-				<p>
-					Get Kraken is a 2D web game in which the player must collect golden fish and release the kraken while holding off a horde of annoying tourists. The player must catch fish which can be used as currency to upgrade their fishing abilities or purchase traps to keep tourists away. 
-					<br/><br/>
-					The player controls the ghost of an old fisherman that is trying to keep the lake peaceful and quiet so the living fishermen can enjoy themselves. 
-					<br/><br/>
-					While in Fishing mode, the ghost controls the fishing line of the old man and manipulates it to maximize the number of fish that are caught.
-					<br/><br/>
-					While in Tourist Defence mode, the ghost can move around the path and scare tourists away as well as spend fish to place scary traps.
-				</p>
+				Get Kraken is a 2D web game in which the player must collect golden fish and release the kraken while holding off a horde of annoying tourists. The player must catch fish which can be used as currency to upgrade their fishing abilities or purchase traps to keep tourists away. 
+				<br/><br/>
+				The player controls the ghost of an old fisherman that is trying to keep the lake peaceful and quiet so the living fishermen can enjoy themselves. 
+				<br/><br/>
+				While in Fishing mode, the ghost controls the fishing line of the old man and manipulates it to maximize the number of fish that are caught.
+				<br/><br/>
+				While in Tourist Defence mode, the ghost can move around the path and scare tourists away as well as spend fish to place scary traps.
+				
 			</div>
 		</div> <!-- content -->	
 
+		<br/>
 		<footer>
 			<div class="container">
 				<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
