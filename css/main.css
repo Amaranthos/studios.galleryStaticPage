@@ -47,6 +47,8 @@ footer {
 	padding: 10px 10px 0 10px; /* t r b l */
 	overflow: auto;
 	border-top: 1px;
+	bottom: 0;
+	position: absolute;
 }
 
 footer > div {
