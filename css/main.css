@@ -138,6 +138,14 @@ footer > div {
 	background-color: #EAEAEA;
 }
 
+.gamepage {
+	text-align: left;
+}
+
+.gamepage h2 {
+	text-align: center;
+}
+
 .noMobileShow
 {
 	display: none;
