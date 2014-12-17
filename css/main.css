@@ -49,6 +49,7 @@ footer {
 	border-top: 1px;
 	bottom: 0;
 	position: absolute;
+	text-align: left;
 }
 
 footer > div {
