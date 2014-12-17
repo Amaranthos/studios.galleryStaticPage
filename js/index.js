@@ -68,6 +68,9 @@ $(document).ready(function(){
 		["Get circles! Three in a row increases your size and multiplier. Avoid triangles! Three will take your multiplier and 25 points.", "img/Slider/CubeInfinity.png", "game1.html"],
 		["Speed down the highway to catch the escaping villain in your Austin martin db5. !!Explosions!!", "img/Slider/Highway.png", "game2.html"],
 		["Build a castle to protect your king from the devastating fury of the enemies cannon fire. Hit the enemy king with a cannon ball to win.", "img/Slider/CannonKings.png", "game3.html"],
+		["Make your way through this level and collect Goo to make yourself invincible.", "img/Slider/GooGoo.png", "game4.html"],
+		["You've found a Chest that contains an infinite amount of loot. What are you going to do? Break it open of course!", "img/Slider/LootToBoot.png", "game5.html"],
+		["Oh Shit! Aliens! was a prototype made under the theme 'A game you could play for ten years.' This game was the first game made this trimester and was made in one week in c++.", "img/Slider/aliens.png", "game6.html"],
 
 		["You have stolen forbidden magic from the high mages, and have been sent to a labyrinth called Renovo as punishment.", "img/Slider/Renovo.png", "game11.html"],
 		["Can you solve the puzzles and lead Walter out of Walters Wizard Warehouse.", "img/Slider/WWW.png", "game12.html"],
@@ -79,7 +82,8 @@ $(document).ready(function(){
 		["How did you end up here? Too much science! Harvest sheep on this pixellated island if you want any hope of surviving the night.", "img/Slider/67.png", "game24.html"],
 		["You are alone on an alien world and your ship is out of fuel. Find the compound you need to fuel your ship and get home.", "img/Slider/Galileo.png", "game25.html"],
 		["Fight through waves of zombies while you collect parts to fix for your broken down car. Collect by day, fight by night.", "img/Slider/DeadWood.png", "game26.html"],
-	];
+		["Multiplayer fun! Drink more beer than your opponent! Scour the fridges and get wasted before your opponent can!", "img/Slider/BeerHunt.png", "game14.html"],
+					];
 	
 	shuffle(gamesInSlider);
 
