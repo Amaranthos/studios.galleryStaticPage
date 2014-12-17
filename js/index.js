@@ -21,9 +21,9 @@ function addThingToSlidyThing(head, captionhead, caption, background, page){
 		var cap = document.createElement("div");
 		cap.className = "carousel-caption";
 
-		var h2 = document.createElement("h2");
-		h2.innerHTML = head;
-		cap.appendChild(h2);
+		// var h2 = document.createElement("h2");
+		// h2.innerHTML = head;
+		// cap.appendChild(h2);
 
 		var ch3 = document.createElement("h3");
 		ch3.innerHTML = captionhead;

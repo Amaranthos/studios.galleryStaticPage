@@ -122,6 +122,10 @@ footer > div {
 	font-weight: bold;
 }
 
+.gameinfo > :nth-child(even){
+	background-color: #EAEAEA;
+}
+
 .noMobileShow
 {
 	display: none;
