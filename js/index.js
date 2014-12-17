@@ -75,6 +75,8 @@ $(document).ready(function(){
 		["You have stolen forbidden magic from the high mages, and have been sent to a labyrinth called Renovo as punishment.", "img/Slider/Renovo.png", "game11.html"],
 		["Can you solve the puzzles and lead Walter out of Walters Wizard Warehouse.", "img/Slider/WWW.png", "game12.html"],
 		["Hear the Music, be the music.", "img/Slider/Rizard.png", "game13.html"],
+		["Multiplayer fun! Drink more beer than your opponent! Scour the fridges and get wasted before your opponent can!", "img/Slider/BeerHunt.png", "game14.html"],
+		["You Play at the loot goblin as he steals loot.", "img/Slider/Pinch.png", "game15.html"],
 
 		["Prevent tourists from disrupting your quiet fishing spot so that you can release the kraken.", "img/Slider/GetKraken.png", "game21.html"],
 		["Everyone knows that antivirus programs play Bomberman in their spare time!", "img/Slider/AntiVirus.png", "game22.html"],
@@ -82,7 +84,6 @@ $(document).ready(function(){
 		["How did you end up here? Too much science! Harvest sheep on this pixellated island if you want any hope of surviving the night.", "img/Slider/67.png", "game24.html"],
 		["You are alone on an alien world and your ship is out of fuel. Find the compound you need to fuel your ship and get home.", "img/Slider/Galileo.png", "game25.html"],
 		["Fight through waves of zombies while you collect parts to fix for your broken down car. Collect by day, fight by night.", "img/Slider/DeadWood.png", "game26.html"],
-		["Multiplayer fun! Drink more beer than your opponent! Scour the fridges and get wasted before your opponent can!", "img/Slider/BeerHunt.png", "game14.html"],
 					];
 	
 	shuffle(gamesInSlider);
