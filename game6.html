@@ -34,7 +34,7 @@
 		<!--
 			var config = {
 				width: 960, 
-				height: 600,
+				height: 540,
 				params: { enableDebugging:"0" }
 				
 			};
@@ -74,7 +74,7 @@
 						break;
 					}
 				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "builds/Valour.unity3d");
+				u.initPlugin(jQuery("#unityPlayer")[0], "builds/LootToBoot.unity3d");
 			});
 		-->
 		</script>
@@ -160,13 +160,13 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href='10years.html'>10 Years Prototype</a>
+							<a href='itsNotYourGame.html'>It's Not Your Game</a>
 						</li>
 						<li>
 							<a href='noOneGetsHurt.html'>No One Gets Hurt</a>
 						</li>
 						<li>
-							<a href='itsNotYourGame.html'>It's Not Your Game</a>
+							<a href='10years.html'>1 Week, 10 Years</a>
 						</li>
 						<li>
 							<a href='aboutUs.html'>About Us</a>
@@ -185,7 +185,7 @@
 			<div class='row'>
 				<div class='col-md-12'>
 					<br/>
-					<h2>Valour</h2>
+					<h2>Oh Shit! Aliens!</h2>
 				</div>
 			</div>
 			<div class="text-center">
@@ -195,28 +195,14 @@
 							
 							
 							
-							<div class="contentt">
-								<div id="unityPlayer">
-									<div class="missing">
-										<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
-											<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
-										</a>
-									</div>
-									<div class="broken">
-										<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
-											<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
-										</a>
-									</div>
-								</div>
-							</div>
-							<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
-								
+					<div class="contentt">
+						<iframe width="560" height="315" src="//www.youtube.com/embed/PLMiL7WXebk" frameborder="0" allowfullscreen></iframe>
 
-
-								
+					
+					
 						</div>
 						<div class='showImageInstead'>
-							<img class='gamepagebanner img-responsive' src='img\MobileBackup\Valour.png'/>
+							<img class='gamepagebanner img-responsive' src='img\MobileBackup\aliens.png'/>
 						</div>
 					</div>
 				</div>
@@ -229,7 +215,7 @@
 							Team Name
 					</div>
 					<div class="col-md-7">
-							Fuck Yeah! Studios
+							SpaceBoiz
 					</div>
 				</div>
 				<div class="row">
@@ -237,7 +223,7 @@
 							Genre
 					</div>
 					<div class="col-md-7">
-							Atmospheric
+							Tower Defense
 					</div>
 				</div>
 				<div class="row">
@@ -245,7 +231,7 @@
 							Project Length
 					</div>
 					<div class="col-md-7">
-							6 Weeks
+							2 Weeks
 					</div>
 				</div>
 				<div class="row">
@@ -253,17 +239,18 @@
 							Team Members
 					</div>
 					<div class="col-md-7">
-							<a href='http://richarddanielstein.wordpress.com/'>Rich Stein</a><br/>
-							<a href='https://www.tumblr.com/blog/theseoddballs'>Jamie Proudlock</a><br/>
-							<a href='http://gjamnadas.wordpress.com/'>Gibraan Jamnadas</a><br/>
-							<a href='http://nicholasroyal.wordpress.com/'>Nicholas Royal</a><br/>
+							<a href='iwrite.software'>Patrick Monaghan</a><br/>
+							<a href='http://joshuahodkinson.tumblr.com'>Joshua Hodkinson</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-xs-12">
 				<h2>Description</h2>
-				This is Valour, a 2D side-scrolling platform game based on the aftermath of Normandy Beach from World War 2. You play a wounded soldier who wakes up on the beach with nowhere to go but forward. Unfortunately the game is not complete due to some team issue, but for what it is worth, here is a playable prototype.
+				<p>During ideation, we (me and another programmer who was, for this project, an artist) decided to take the theme literally. So the premise of the game is, you are some world leader or something and your scientists have told you that there are aliens hungry for human extinction en route for earth, but it will take them exactly ten years to get here. Your goal is to build uranium mines, nuke silos, and shield generators to defend earth in the time you've got. In the top right is a time slider that changes the pace at which time moves. The max will burn through all ten years in a matter of seconds, and the minimum is realtime, so you can 'actually' play the game for ten years. But because of lack of polish and animation, it will most likely be an uneventful ten years. </p>
+				<br/>
+				<p>After ten years, the aliens arrive and the time scale is locked at realtime. To fire nukes, click the alien ships. Nuke silos only have a small arc of fire and the rate of fire increases the longer they are built. Shield generators cost uranium in the build stage. Nukes cost 1 U per fire.</p>
+
 			</div>
 			
 			<div class="contentt">
@@ -280,13 +267,12 @@
 				</script>
 				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			</div>
-			
-			
 		</div> <!-- content -->	
 
 		<br/>
 		<footer>
 			<div class="container">
+				<div class="fb-like" data-href=document.URL data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 				<div class="fb-like" data-href=document.URL data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 				<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 				<p>&copy; Steve Halliwell 2014</p>
