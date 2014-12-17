@@ -152,3 +152,6 @@ footer > div {
 	.showImageInstead { display: none; }
 }
 
+a:link, a:visited {
+	color: #379B1B;
+}
