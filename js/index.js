@@ -43,9 +43,28 @@ function addThingToSlidyThing(caption, background, page){
 	slidesCon.appendChild(element);
 }
 
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 
 $(document).ready(function(){
-	var thingamajigs = [
+	var gamesInSlider = [
 		["Get circles! Three in a row increases your size and multiplier. Avoid triangles! Three will take your multiplier and 25 points.", "img/Slider/CubeInfinity.png", "game1.html"],
 		["Speed down the highway to catch the escaping villain in your Austin martin db5. !!Explosions!!", "img/Slider/Highway.png", "game2.html"],
 		["Build a castle to protect your king from the devastating fury of the enemies cannon fire. Hit the enemy king with a cannon ball to win.", "img/Slider/CannonKings.png", "game3.html"],
@@ -61,8 +80,11 @@ $(document).ready(function(){
 		["You are alone on an alien world and your ship is out of fuel. Find the compound you need to fuel your ship and get home.", "img/Slider/Galileo.png", "game25.html"],
 		["Fight through waves of zombies while you collect parts to fix for your broken down car. Collect by day, fight by night.", "img/Slider/DeadWood.png", "game26.html"],
 	];
+	
+	shuffle(gamesInSlider);
 
-	var dfsvg = thingamajigs[0];
-	addThingToSlidyThing(dfsvg[0], dfsvg[1], dfsvg[2]);
-
+	for(i = 0; i < gamesInSlider.length; i++) {
+		var temp = gamesInSlider[i];
+		addThingToSlidyThing(temp[0], temp[1], temp[2]);
+	}
 });
