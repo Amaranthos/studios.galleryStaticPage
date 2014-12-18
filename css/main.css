@@ -27,6 +27,7 @@
 body {
 	padding-top: 50px;
 	font-family: "Roboto";
+	padding-bottom: 60px;
 }
 
 .carousel h2{
@@ -163,9 +164,4 @@ footer > div {
 
 a:link, a:visited {
 	color: #379B1B;
-}
-
-.content
-{
-	padding-bottom: 50px;
 }
