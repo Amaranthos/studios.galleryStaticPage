@@ -48,7 +48,7 @@ footer {
 	overflow: auto;
 	border-top: 1px;
 	bottom: 0;
-	position: absolute;
+	position: fixed;
 }
 
 footer > div {
@@ -154,4 +154,9 @@ footer > div {
 
 a:link, a:visited {
 	color: #379B1B;
+}
+
+.content
+{
+	padding-bottom: 50px;
 }
