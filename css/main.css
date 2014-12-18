@@ -74,8 +74,8 @@ footer > div {
 	background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel-caption {
-	left: 0;
-	right: 0;
+	/*left: 0;
+	right: 0;*/
 }
 
 .carousel .item > img {
