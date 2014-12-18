@@ -82,7 +82,7 @@ $(document).ready(function(){
 		["Prevent tourists from disrupting your quiet fishing spot so that you can release the kraken.", "img/Slider/GetKraken.png", "game21.html"],
 		["Everyone knows that antivirus programs play Bomberman in their spare time!", "img/Slider/AntiVirus.png", "game22.html"],
 		["This is Valour, a 2D side-scrolling platform game based on the aftermath of Normandy Beach from World War 2.", "img/Slider/Valour.png", "game23.html"],
-		["How did you end up here? Too much science! Harvest sheep on this pixellated island if you want any hope of surviving the night.", "img/Slider/67.png", "game24.html"],
+		["How did you end up here? Too much science! Harvest sheep on this pixellated island if you want any hope of surviving the night.", "img/Slider/67.jpg", "game24.html"],
 		["You are alone on an alien world and your ship is out of fuel. Find the compound you need to fuel your ship and get home.", "img/Slider/Galileo.png", "game25.html"],
 		["Fight through waves of zombies while you collect parts to fix for your broken down car. Collect by day, fight by night.", "img/Slider/DeadWood.png", "game26.html"],
 					];
