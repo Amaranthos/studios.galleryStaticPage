@@ -67,23 +67,23 @@ $(document).ready(function(){
 	var gamesInSlider = [
 		["Get circles! Three in a row increases your size and multiplier. Avoid triangles! Three will take your multiplier and 25 points.", "img/Slider/CubeInfinity.png", "game1.html"],
 		["Speed down the highway to catch the escaping villain in your Austin martin db5. !!Explosions!!", "img/Slider/Highway.png", "game2.html"],
-		["Build a castle to protect your king from the devastating fury of the enemies cannon fire. Hit the enemy king with a cannon ball to win.", "img/Slider/CannonKings.png", "game3.html"],
+		["Build a castle to protect your king from the devastating fury of the enemy's cannon fire. Hit the enemy king with a cannon ball to win.", "img/Slider/CannonKings.png", "game3.html"],
 		["Make your way through this level and collect Goo to make yourself invincible.", "img/Slider/GooGoo.png", "game4.html"],
 		["You've found a Chest that contains an infinite amount of loot. What are you going to do? Break it open of course!", "img/Slider/LootToBoot.png", "game5.html"],
-		["Oh Shit! Aliens! was a prototype made under the theme 'A game you could play for ten years.' This game was the first game made this trimester and was made in one week in c++.", "img/Slider/aliens.png", "game6.html"],
+		["Oh Shit! Aliens! is a game about saving Planet Earth.", "img/Slider/aliens.png", "game6.html"],
 
 		["You have stolen forbidden magic from the high mages, and have been sent to a labyrinth called Renovo as punishment.", "img/Slider/Renovo.png", "game11.html"],
-		["Can you solve the puzzles and lead Walter out of Walters Wizard Warehouse.", "img/Slider/WWW.png", "game12.html"],
+		["Can you solve the puzzles and lead Walter out of Walter's Wizard Warehouse.", "img/Slider/WWW.png", "game12.html"],
 		["Hear the Music, be the music.", "img/Slider/Rizard.png", "game13.html"],
 		["Multiplayer fun! Drink more beer than your opponent! Scour the fridges and get wasted before your opponent can!", "img/Slider/BeerHunt.png", "game14.html"],
-		["You Play at the loot goblin as he steals loot.", "img/Slider/Pinch.png", "game15.html"],
+		["Be the Loot-Goblin.", "img/Slider/Pinch.png", "game15.html"],
 		["Wizards play tag in their spare time!", "img/Slider/GravitasMagi.png", "game16.html"],
 
-		["Prevent tourists from disrupting your quiet fishing spot so that you can release the kraken.", "img/Slider/GetKraken.png", "game21.html"],
+		["Prevent tourists from disrupting your quiet fishing spot so that you can release the Kraken.", "img/Slider/GetKraken.png", "game21.html"],
 		["Everyone knows that antivirus programs play Bomberman in their spare time!", "img/Slider/AntiVirus.png", "game22.html"],
-		["This is Valour, a 2D side-scrolling platform game based on the aftermath of Normandy Beach from World War 2.", "img/Slider/Valour.png", "game23.html"],
-		["How did you end up here? Too much science! Harvest sheep on this pixellated island if you want any hope of surviving the night.", "img/Slider/67.jpg", "game24.html"],
-		["You are alone on an alien world and your ship is out of fuel. Find the compound you need to fuel your ship and get home.", "img/Slider/Galileo.png", "game25.html"],
+		["This is Valour, a 2D side-scrolling prototype.", "img/Slider/Valour.png", "game23.html"],
+		["How did you end up here? Too much science! Harvest sheep on this pixellated island if you want to survive the night.", "img/Slider/67.jpg", "game24.html"],
+		["You are alone on an alien world and your ship is out of fuel.", "img/Slider/Galileo.png", "game25.html"],
 		["Fight through waves of zombies while you collect parts to fix for your broken down car. Collect by day, fight by night.", "img/Slider/DeadWood.png", "game26.html"],
 					];
 	
