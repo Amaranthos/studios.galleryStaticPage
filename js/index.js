@@ -77,6 +77,7 @@ $(document).ready(function(){
 		["Hear the Music, be the music.", "img/Slider/Rizard.png", "game13.html"],
 		["Multiplayer fun! Drink more beer than your opponent! Scour the fridges and get wasted before your opponent can!", "img/Slider/BeerHunt.png", "game14.html"],
 		["You Play at the loot goblin as he steals loot.", "img/Slider/Pinch.png", "game15.html"],
+		["Wizards play tag in their spare time!", "img/Slider/GravitasMagi.png", "game16.html"],
 
 		["Prevent tourists from disrupting your quiet fishing spot so that you can release the kraken.", "img/Slider/GetKraken.png", "game21.html"],
 		["Everyone knows that antivirus programs play Bomberman in their spare time!", "img/Slider/AntiVirus.png", "game22.html"],
