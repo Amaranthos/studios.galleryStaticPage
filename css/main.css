@@ -164,3 +164,8 @@ footer > div {
 a:link, a:visited {
 	color: #379B1B;
 }
+
+.content
+{
+	padding-bottom: 50px;
+}
