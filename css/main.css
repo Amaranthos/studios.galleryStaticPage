@@ -73,10 +73,6 @@ footer > div {
 	box-shadow: 0 0 20px rgba(0,0,0,0.6);
 	background-color: rgba(0, 0, 0, 0.6);
 }
-.carousel-caption {
-	/*left: 0;
-	right: 0;*/
-}
 
 .carousel .item > img {
 	margin: 0 auto;
@@ -164,4 +160,8 @@ footer > div {
 
 a:link, a:visited {
 	color: #379B1B;
+}
+
+a:active, a:hover {
+	color: #286C15;
 }
